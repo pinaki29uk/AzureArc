@@ -1,0 +1,20 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: AzureArc
+  namespace: dev
+spec:
+  releaseName: hello-kubernetes-dev
+  chart:
+    git: https://github.com/zaidmohd/hello_arc.git
+    path: charts/hello-arc
+    ref: master
+  values:
+    image:
+      repository: liorkamrat/hello-arc
+      tag: latest
+    replicaCount: 3
+    env:
+      name: MESSAGE
+      value: Zaid Cloud Azure Arc enabled K8s series GitOps Demo!
+© 2021 GitHub, Inc.
