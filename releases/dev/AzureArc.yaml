@@ -7,14 +7,14 @@ spec:
   releaseName: hello-kubernetes-dev
   chart:
     git: https://github.com/zaidmohd/hello_arc.git
-    path: charts/hello-arc
+    path: charts/AzureArc
     ref: master
   values:
     image:
-      repository: liorkamrat/hello-arc
+      repository: nginx
       tag: latest
-    replicaCount: 3
+    replicaCount: 2
     env:
       name: MESSAGE
-      value: Zaid Cloud Azure Arc enabled K8s series GitOps Demo!
+      value: Pinaki Cloud Azure Arc enabled K8s series GitOps Demo!
 © 2021 GitHub, Inc.
