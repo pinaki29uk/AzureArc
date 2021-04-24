@@ -12,5 +12,5 @@ spec:
   - http:
       paths:
       - backend:
-          serviceName: hello-arc
+          serviceName: hello-kubernetes-custom
           servicePort: 8080
